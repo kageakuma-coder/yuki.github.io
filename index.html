@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuki's Profile Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    .main {
+      flex: 1;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+    }
+
+    header, footer {
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="sidebar">
+      <h3>Menu</h3>
+      <p>Home / About / Contact</p>
+    </div>
+    <div class="main">
+      <h1>Welcome Yuki!</h1>
+      <p>This site looks great on all devices!</p>
+    </div>
+  </div>
+
+  <header>Yuki Menu Bar</header>
+
+  <section id="about">About Me</section>
+  <section id="skills">I can do HTML, CSS, Python</section>
+  <section id="projects">
+    <a href="https://www.roblox.com/home" target="_blank">Visit My Roblox</a>
+  </section>
+  <section id="contact">Phone: 09-444363458</section>
+
+  <footer>Yuki Made © 2025</footer>
+
+</body>
+</html>
+
